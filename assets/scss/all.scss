@@ -1,0 +1,23 @@
+// @import './pages/index.scss';
+@import 'bootstrap/scss/functions';
+
+@import './layout/variables.scss';
+@import './layout/variables-dark.scss';
+// @import "bootstrap/scss/utilities";
+
+
+@import 'bootstrap/scss/bootstrap';
+
+// $utilities: map-merge(
+//   $utilities, (
+//     "font-size": map-merge(
+//       map-get($utilities, "font-size"),
+//       ( responsive: true ),
+//     ),
+//   )
+// );
+
+
+*{
+    outline: 1px solid darkgreen;
+}
