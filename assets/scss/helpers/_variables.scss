@@ -4,55 +4,34 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
-//project gray-color-variables
-$white:#FCFCFD;
-$natural-95: #F0F3F5;
-$natural-90: #E0E5EB;
-$natural-85: #D1D9E1;
-$natural-75: #B2BFCC;
-$natural-60: #8599AD;
-$natural-50: #667F99;
-$natural-30: #3D4D5C;
-$natural-10: #141A1F;
-$black:#141A1F;
+
 // scss-docs-start gray-color-variables
-// $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
+$white:    #FCFCFD !default;  //custom
+$gray-100: #F0F3F5 ;      // #f8f9fa !default;
+$gray-200: #E0E5EB ;      // #e9ecef !default;
+$gray-300: #D1D9E1 ;      // #dee2e6 !default;
+$gray-400: #B2BFCC ;      // #ced4da !default;
+$gray-500: #8599AD ;      // #adb5bd !default;
+$gray-600: #667F99 ;      // #6c757d !default;
+$gray-700: #3D4D5C ;      // #495057 !default;
+$gray-800: #141A1F ;      // #343a40 !default;
 $gray-900: #212529 !default;
-// $black:    #000 !default;
+$black:    #141A1F !default; //custom
 // scss-docs-end gray-color-variables
 
 // fusv-disable
 // scss-docs-start gray-colors-map
 $grays: (
-  "100": $natural-95,
-  "200": $natural-90,
-  "300": $natural-85,
-  "400": $natural-75,
-  "500": $natural-60,
-  "600": $natural-50,
-  "700": $natural-30,
-  "800": $natural-10,
-);
-
-    // $grays: (
-    //   "100": $gray-100,
-    //   "200": $gray-200,
-    //   "300": $gray-300,
-    //   "400": $gray-400,
-    //   "500": $gray-500,
-    //   "600": $gray-600,
-    //   "700": $gray-700,
-    //   "800": $gray-800,
-    //   "900": $gray-900
-    // ) !default;
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
 // scss-docs-end gray-colors-map
 // fusv-enable
 
@@ -317,7 +296,8 @@ $cyans: (
   "cyan-900": $cyan-900
 ) !default;
 // fusv-enable
-//project theme-color-variables
+
+// scss-docs-start theme-color-variables
 $primary-97: #F1F4FD;
 $primary-90: #D2D9F9;
 $primary-80: #A4B4F3;
@@ -346,66 +326,31 @@ $warning:       $warning-48;
 $danger-90: #FFD0CC;
 $danger-70: #FF7467;
 $danger-45: #E51300;
-$danger:        $danger-70;
+$danger:        $danger-45;
 
-// scss-docs-start theme-color-variables
 // $primary:       $blue !default;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 $info:          $cyan !default;
-// $warning:       #B26800;  //$yellow !default;
-// $danger:        #E51300;  //$red !default;
-$light:         #FCFCFD;  //$gray-100 !default;
-$dark:          #141A1F;  //$gray-900 !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+
 // scss-docs-end theme-color-variables
-// projact theme-colors-map
-$theme-colors:(
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
   "primary":    $primary,
-  "primary-97":$primary-97,
-  "primary-90":$primary-90,
-  "primary-80":$primary-80,
-  "primary-70":$primary-70,
-  "primary-60":$primary-60,
-  "primary-40":$primary-40,
-  "primary-25":$primary-25,
-
-  "secondary":$secondary,
-  "secondary-90":$secondary-90,
-  "secondary-70":$secondary-70,
-  "secondary-50":$secondary-50,
-  "secondary-35":$secondary-35,
-
-  "success-90": $success-90,
-  "success-40": $success-40,
-  "success-30": $success-30,
+  "secondary":  $secondary,
   "success":    $success,
-
-  "warning-90": $warning-90,
-  "warning-48": $warning-48,
-  "warning-35": $warning-35,
-  "warning":    $warning,
-
-  "danger-90":  $danger-90,
-  "danger-70":  $danger-70,
-  "danger-45":  $danger-45,
-  "danger":     $danger,
-
   "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
   "light":      $light,
-  "dark":       $dark,
-);
-
-  // scss-docs-start theme-colors-map
-    // $theme-colors: (
-    //   "primary":    $primary,
-    //   "secondary":  $secondary,
-    //   "success":    $success,
-    //   "info":       $info,
-    //   "warning":    $warning,
-    //   "danger":     $danger,
-    //   "light":      $light,
-    //   "dark":       $dark
-    // ) !default;
+  "dark":       $dark
+) !default;
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-text-variables
@@ -495,32 +440,14 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
-
 $spacers: (
   0: 0,
-  1: $spacer * .25, //4
-  2: $spacer * .5,  //8
-  3: $spacer * .75, //12
-  4: $spacer , 
-  5: $spacer * 1.25,  //20
-  6: $spacer * 1.5, //24
-  7: $spacer * 2, //32
-  8: $spacer * 2.5, //40
-  9: $spacer * 3, //48
-  10: $spacer * 4,  //64
-  11: $spacer * 4.5,  //72
-  12: $spacer * 5,  //80
-) ;
-
-    // $spacers: (
-    //   0: 0,
-    //   1: $spacer * .25,
-    //   2: $spacer * .5,
-    //   3: $spacer,
-    //   4: $spacer * 1.5,
-    //   5: $spacer * 3,
-    //   4s:$spacer * 2,
-    // ) !default;
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -610,7 +537,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1296px, //1320px custom
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -719,10 +646,7 @@ $font-family-code:            var(--#{$prefix}font-monospace) !default;
 $font-size-root:              null !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
-$font-size-xs:                $font-size-base * .75 ;    
-$font-size-lg:                $font-size-base * 1.125 ;
-
-// $font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -738,19 +662,12 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 3 !default;
+$h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
-
-    // $h1-font-size:                $font-size-base * 2.5 !default;
-    // $h2-font-size:                $font-size-base * 2 !default;
-    // $h3-font-size:                $font-size-base * 1.75 !default;
-    // $h4-font-size:                $font-size-base * 1.5 !default;
-    // $h5-font-size:                $font-size-base * 1.25 !default;
-    // $h6-font-size:                $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes

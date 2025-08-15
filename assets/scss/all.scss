@@ -1,9 +1,10 @@
 // @import './pages/index.scss';
 @import 'bootstrap/scss/functions';
 
-@import './layout/variables.scss';
-@import './layout/variables-dark.scss';
-// @import "bootstrap/scss/utilities";
+@import './helpers/variables';
+
+
+
 
 
 @import 'bootstrap/scss/bootstrap';
@@ -17,7 +18,16 @@
 //   )
 // );
 
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons+Outlined';
+ 
+// *{
+//     outline: 1px solid rgb(142, 168, 142);
+    
+// }
 
-*{
-    outline: 1px solid darkgreen;
+body{
+    background-color: $gray-100;
+}
+.cus-shadow{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
 }
